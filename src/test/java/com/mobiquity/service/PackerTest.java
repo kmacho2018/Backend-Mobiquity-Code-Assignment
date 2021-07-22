@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
+ * @author Juan Camacho
  * This test to emulate how is going to be call from the main program
  */
 public class PackerTest {

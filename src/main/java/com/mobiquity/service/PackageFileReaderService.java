@@ -59,7 +59,7 @@ public class PackageFileReaderService {
      */
     private static Package createPackage(String line) throws APIException {
         Scanner scanner = new Scanner(line);
-        Float maxWeight = scanner.nextFloat();
+        float maxWeight = scanner.nextFloat();
         if (maxWeight <= 0 || maxWeight > 100) {
             throw new APIException("Invalid max weight");
         }
@@ -88,9 +88,9 @@ public class PackageFileReaderService {
             throw new APIException("Invalid File - item values");
         }
 
-        Integer index = Integer.valueOf(values[0]);
+        int index = Integer.parseInt(values[0]);
 
-        Float weight = Float.valueOf(values[1]);
+        float weight = Float.parseFloat(values[1]);
 
         String costString = values[2];
 
@@ -98,7 +98,7 @@ public class PackageFileReaderService {
             throw new APIException("Invalid cost values");
         }
 
-        Float cost = Float.valueOf(costString.substring(1, values[2].length()));
+        float cost = Float.parseFloat(costString.substring(1, values[2].length()));
         if (weight <= 0 || cost <= 0 || weight > 100 || cost > 100) {
             throw new APIException("Invalid values");
         }

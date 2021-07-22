@@ -10,9 +10,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Item {
-    private Integer index;
+    private int index;
     private Float weight, cost;
-    public Item(Integer index, Float weight, Float cost) {
+    public Item(int index, float weight, float cost) {
         this.index = index;
         this.weight = weight;
         this.cost = cost;
