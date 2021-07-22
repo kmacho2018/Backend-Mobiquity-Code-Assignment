@@ -1,0 +1,41 @@
+plugins {
+  id 'java'
+  id 'maven-publish'
+}
+
+group 'com.mobiquity'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compileOnly 'org.projectlombok:lombok:1.18.20'
+  annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+  testCompileOnly 'org.projectlombok:lombok:1.18.20'
+  testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+  // https://mvnrepository.com/artifact/junit/junit
+  testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+}
+
+publishing {
+  publications {
+    maven(MavenPublication) {
+      artifactId = 'implementation'
+      from components.java
+    }
+  }
+}
+
+dependencies {
+    implementation 'junit:junit:4.13.1'
+  implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+  implementation 'junit:junit:4.13.1'
+    implementation 'org.projectlombok:lombok:1.18.18'
+  implementation 'org.projectlombok:lombok:1.18.18'
+}
