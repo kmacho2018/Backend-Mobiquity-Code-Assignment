@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  * @author Juan Camacho
- * This is a object used to handle the information we need of the packages to be return.
+ * This class represent a object used to handle the information we need of the packages to be return.
  */
 @Getter
 @Setter

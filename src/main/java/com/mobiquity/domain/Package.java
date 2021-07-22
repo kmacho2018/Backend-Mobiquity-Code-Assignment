@@ -9,7 +9,7 @@ import java.util.Set;
 
 /**
  * @author Juan Camacho
- * This represents the package you send to a friend (is one line in the document we read).
+ * This class represents the package you send to a friend (is one line in the document we read).
  */
 @Getter
 @Setter

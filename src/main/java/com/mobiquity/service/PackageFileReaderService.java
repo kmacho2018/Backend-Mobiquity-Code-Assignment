@@ -6,7 +6,10 @@ import com.mobiquity.exception.APIException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Field;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Currency;
 import java.util.List;
 import java.util.Scanner;
 
@@ -90,7 +93,8 @@ public class PackageFileReaderService {
         Float weight = Float.valueOf(values[1]);
 
         String costString = values[2];
-        if (!costString.startsWith("€")) {
+
+        if (!costString.startsWith(Currency.getInstance("EUR").getSymbol())) {
             throw new APIException("Invalid cost values");
         }
 

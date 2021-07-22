@@ -10,3 +10,5 @@ com/mobiquity/exception/APIException.java
  com.mobiquity.exception.APIException
 com/mobiquity/packer/Packer.java
  com.mobiquity.packer.Packer
+com/mobiquity/service/PackageFileReaderService.java
+ com.mobiquity.service.PackageFileReaderService
