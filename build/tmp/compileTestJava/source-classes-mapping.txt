@@ -1,2 +1,4 @@
 com/mobiquity/service/PackerTest.java
  com.mobiquity.service.PackerTest
+com/mobiquity/service/PackageFileReaderTest.java
+ com.mobiquity.service.PackageFileReaderTest
