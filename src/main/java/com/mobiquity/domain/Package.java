@@ -17,6 +17,10 @@ public class Package {
 
     private Float maxWeight;
     private List<Item> itemList;
+    public Package(Float maxWeight, List<Item> itemList) {
+        this.maxWeight = maxWeight;
+        this.itemList = itemList;
+    }
     private Response response = new Response();
 
     /**

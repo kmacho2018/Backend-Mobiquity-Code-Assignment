@@ -12,4 +12,9 @@ import lombok.Setter;
 public class Item {
     private Integer index;
     private Float weight, cost;
+    public Item(Integer index, Float weight, Float cost) {
+        this.index = index;
+        this.weight = weight;
+        this.cost = cost;
+    }
 }
